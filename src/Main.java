@@ -8,11 +8,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Instancia os Controllers principais (banco de dados em memória compartilhada)
+        
         TutorController tutorController = new TutorController();
         AnimalController animalController = new AnimalController();
 
-        // Instancia as Views passando os respectivos controllers
+        
         TutorView tutorView = new TutorView(tutorController);
         AnimalView animalView = new AnimalView(animalController, tutorController);
 
