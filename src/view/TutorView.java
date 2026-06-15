@@ -9,7 +9,7 @@ public class TutorView {
     private TutorController controller;
     private Scanner scanner;
 
-    // Construtor aceita o controller para podermos compartilhar os dados com a parte do Animal
+    
     public TutorView(TutorController controller) {
         this.controller = controller;
         this.scanner = new Scanner(System.in);
