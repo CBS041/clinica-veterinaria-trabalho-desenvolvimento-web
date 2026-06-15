@@ -4,8 +4,7 @@ public abstract class Animal {
     protected int id;
     protected String nome;
     protected int idade;
-    protected Tutor tutor; // Associação: Todo animal pertence a um Tutor
-
+    protected Tutor tutor; 
     public Animal(String nome, int idade, Tutor tutor) {
         this.nome = nome;
         this.idade = idade;
