@@ -26,6 +26,6 @@ public abstract class Usuario {
     public String getSenha() { return senha; }
     public void setSenha(String senha) { this.senha = senha; }
 
-    // Método abstrato opcional se quiser forçar as filhas a implementarem algo específico
+    
     public abstract String getTipoUsuario(); 
 }
