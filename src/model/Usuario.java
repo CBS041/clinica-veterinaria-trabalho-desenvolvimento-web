@@ -1,6 +1,6 @@
 package model;
 
-// Classe abstrata: não pode ser instanciada diretamente, serve de base para Cliente e Admin
+
 public abstract class Usuario {
     protected int id;
     protected String nome;
@@ -13,7 +13,7 @@ public abstract class Usuario {
         this.senha = senha;
     }
 
-    // Getters e Setters
+  
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
