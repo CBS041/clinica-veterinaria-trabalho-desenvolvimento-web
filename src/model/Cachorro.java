@@ -11,10 +11,10 @@ public class Cachorro extends Animal {
     public String getRaca() { return raca; }
     public void setRaca(String raca) { this.raca = raca; }
 
-    @Override
+    
     public String getEspecie() { return "Cachorro"; }
 
-    @Override
+    
     public String toString() {
         String nomeTutor = (tutor != null) ? tutor.getNome() : "Sem Tutor";
         return "ID: " + id + " | Espécie: " + getEspecie() + " | Nome: " + nome + " | Idade: " + idade + " anos | Raça: " + raca + " | Tutor: " + nomeTutor;

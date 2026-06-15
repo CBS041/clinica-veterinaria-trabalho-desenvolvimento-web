@@ -21,7 +21,7 @@ public class Funcionario extends Pessoa {
     public String getSetor() { return setor; }
     public void setSetor(String setor) { this.setor = setor; }
 
-    @Override
+    
     public String toString() {
         return "ID: " + id + " | Funcionário: " + nome + " | CPF: " + cpf + " | Tel: " + telefone
                 + " | Cargo: " + cargo + " | Setor: " + setor;

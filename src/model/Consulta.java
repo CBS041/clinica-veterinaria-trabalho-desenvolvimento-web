@@ -44,7 +44,7 @@ public class Consulta implements Serializable {
         this.horario = horario;
     }
 
-    @Override
+    
     public String toString() {
         return "Animal: " + nomeAnimal +
                 " | Veterinário: " + nomeVeterinario +

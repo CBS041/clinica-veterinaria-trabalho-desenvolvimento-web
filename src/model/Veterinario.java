@@ -21,7 +21,7 @@ public class Veterinario extends Pessoa {
     public String getEspecialidade() { return especialidade; }
     public void setEspecialidade(String especialidade) { this.especialidade = especialidade; }
 
-    @Override
+    
     public String toString() {
         return "ID: " + id + " | Veterinário: " + nome + " | CPF: " + cpf + " | Tel: " + telefone
                 + " | CRMV: " + crmv + " | Especialidade: " + especialidade;

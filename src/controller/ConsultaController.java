@@ -3,6 +3,7 @@ package controller;
 import model.Consulta;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ConsultaController {
 
@@ -37,6 +38,10 @@ public class ConsultaController {
                             consultas.get(i)
             );
         }
+    }
+
+    public List<Consulta> getConsultas() {
+        return consultas;
     }
 
     public void cancelarConsulta(

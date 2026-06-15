@@ -11,12 +11,12 @@ public class Administrador extends Usuario {
     public String getNivelAcesso() { return nivelAcesso; }
     public void setNivelAcesso(String nivelAcesso) { this.nivelAcesso = nivelAcesso; }
 
-    @Override
+    
     public String getTipoUsuario() {
         return "Administrador";
     }
 
-    @Override
+    
     public String toString() {
         return "ID: " + id + " | Tipo: " + getTipoUsuario() + " | Nome: " + nome + " | Login: " + login + " | Nível: " + nivelAcesso;
     }
