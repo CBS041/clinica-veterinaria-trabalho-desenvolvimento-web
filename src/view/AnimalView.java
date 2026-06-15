@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class AnimalView {
     private AnimalController animalController;
-    private TutorController tutorController; // Para vincular o animal ao tutor existente
+    private TutorController tutorController; 
     private Scanner scanner;
 
     public AnimalView(AnimalController animalController, TutorController tutorController) {
