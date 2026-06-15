@@ -11,8 +11,12 @@ public class TutorView {
 
     
     public TutorView(TutorController controller) {
+        this(controller, new Scanner(System.in));
+    }
+
+    public TutorView(TutorController controller, Scanner scanner) {
         this.controller = controller;
-        this.scanner = new Scanner(System.in);
+        this.scanner = scanner;
     }
 
     public void exibirMenu() {

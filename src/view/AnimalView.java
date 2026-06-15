@@ -16,9 +16,13 @@ public class AnimalView {
     private Scanner scanner;
 
     public AnimalView(AnimalController animalController, TutorController tutorController) {
+        this(animalController, tutorController, new Scanner(System.in));
+    }
+
+    public AnimalView(AnimalController animalController, TutorController tutorController, Scanner scanner) {
         this.animalController = animalController;
         this.tutorController = tutorController;
-        this.scanner = new Scanner(System.in);
+        this.scanner = scanner;
     }
 
     public void exibirMenu() {

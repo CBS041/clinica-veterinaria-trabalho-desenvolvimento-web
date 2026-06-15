@@ -1,7 +1,11 @@
 import controller.AnimalController;
+import controller.FuncionarioController;
 import controller.TutorController;
+import controller.VeterinarioController;
 import view.AnimalView;
+import view.FuncionarioView;
 import view.TutorView;
+import view.VeterinarioView;
 import java.util.Scanner;
 
 public class Main {
@@ -11,10 +15,14 @@ public class Main {
         
         TutorController tutorController = new TutorController();
         AnimalController animalController = new AnimalController();
+        VeterinarioController veterinarioController = new VeterinarioController();
+        FuncionarioController funcionarioController = new FuncionarioController();
 
         
-        TutorView tutorView = new TutorView(tutorController);
-        AnimalView animalView = new AnimalView(animalController, tutorController);
+        TutorView tutorView = new TutorView(tutorController, scanner);
+        AnimalView animalView = new AnimalView(animalController, tutorController, scanner);
+        VeterinarioView veterinarioView = new VeterinarioView(veterinarioController, scanner);
+        FuncionarioView funcionarioView = new FuncionarioView(funcionarioController, scanner);
 
         int opcao = -1;
         while (opcao != 0) {
@@ -23,6 +31,8 @@ public class Main {
             System.out.println("=================================");
             System.out.println("1 - Menu de Tutores");
             System.out.println("2 - Menu de Animais");
+            System.out.println("3 - Menu de Veterinários");
+            System.out.println("4 - Menu de Funcionários");
             System.out.println("0 - Sair do Sistema");
             System.out.print("Escolha o módulo: ");
 
@@ -32,6 +42,10 @@ public class Main {
                     tutorView.exibirMenu();
                 } else if (opcao == 2) {
                     animalView.exibirMenu();
+                } else if (opcao == 3) {
+                    veterinarioView.exibirMenu();
+                } else if (opcao == 4) {
+                    funcionarioView.exibirMenu();
                 }
             } catch (Exception e) {
                 System.out.println("Opção inválida!");
