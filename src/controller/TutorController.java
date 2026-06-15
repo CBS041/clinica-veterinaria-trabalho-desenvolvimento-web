@@ -23,7 +23,7 @@ public class TutorController {
                 return t;
             }
         }
-        return null; // Retorna null se não encontrar
+        return null; 
     }
 
     public boolean alterarTutor(int id, String novoNome, String novoTelefone) {
